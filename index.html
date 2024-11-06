@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <title>Classificador de Herói</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Classificador de Nível de Herói</h1>
+        <p>Digite o nome do seu herói e a quantidade de experiência para descobrir a sua classificação!</p>
+    </header>
+    <main id="main">     
+        <section id="main-content">
+            <section id="input-section">
+            <form>
+                <label for="name">Nome do Herói:</label>
+                <input type="text" id="name" name="name" placeholder="insira o nome do seu herói" required>
+
+                <label for="xp">Experiência (XP):</label>
+                <input type="number" min="0" id="xp" name="xp" placeholder="insira sua quantidade de xp" required>
+
+                <p>Qual seu agente favorito?</p>
+                <div class="image-options">
+                    <label>
+                        <input type="radio" name="agent" value="astra" required>
+                        <img src="./src/images/astra-icon.webp" alt="Astra" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="breach" required>
+                        <img src="./src/images/breach-icon.webp" alt="Breach" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="brimstone" required>
+                        <img src="./src/images/brimstone-icon.webp" alt="Brimstone" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="chamber" required>
+                        <img src="./src/images/chamber-icon.webp" alt="Chamber" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="clove" required>
+                        <img src="./src/images/clove-icon.webp" alt="Clove" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="cypher" required>
+                        <img src="./src/images/cypher-icon.webp" alt="Cypher" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="deadlock" required>
+                        <img src="./src/images/deadlock-icon.webp" alt="Deadlock" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="fade" required>
+                        <img src="./src/images/fade-icon.webp" alt="Fade" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="gekko" required>
+                        <img src="./src/images/gekko-icon.webp" alt="Gekko" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="harbor" required>
+                        <img src="./src/images/harbor-icon.webp" alt="Harbor" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="iso" required>
+                        <img src="./src/images/iso-icon.webp" alt="Iso" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="jett" required>
+                        <img src="./src/images/jett-icon.webp" alt="Jett" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="kayo" required>
+                        <img src="./src/images/kayo-icon.webp" alt="Kay/O" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="killjoy" required>
+                        <img src="./src/images/killjoy-icon.webp" alt="Killjoy" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="neon" required>
+                        <img src="./src/images/neon-icon.webp" alt="Neon" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="omen" required>
+                        <img src="./src/images/omen-icon.webp" alt="Omen" class="selectable-image">
+                    </label><label>
+                        <input type="radio" name="agent" value="phoenix" required>
+                        <img src="./src/images/phoenix-icon.webp" alt="Phoenix" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="raze" required>
+                        <img src="./src/images/raze-icon.webp" alt="Raze" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="reyna" required>
+                        <img src="./src/images/reyna-icon.webp" alt="Reyna" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="sage" required>
+                        <img src="./src/images/sage-icon.webp" alt="Sage" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="skye" required>
+                        <img src="./src/images/skye-icon.webp" alt="Skye" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="sova" required>
+                        <img src="./src/images/sova-icon.webp" alt="Sova" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="viper" required>
+                        <img src="./src/images/viper-icon.webp" alt="Viper" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="vyse" required>
+                        <img src="./src/images/vyse-icon.webp" alt="Vyse" class="selectable-image">
+                    </label>
+                    <label>
+                        <input type="radio" name="agent" value="yoru" required>
+                        <img src="./src/images/yoru-icon.webp" alt="Yoru" class="selectable-image">
+                    </label>
+
+                </div>
+                <div class="buttons">
+                    <button id="classify-btn" type="submit">Classificar</button>
+                    <button id="clear-btn" type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+        <section id="mid-section">
+            <h1>DESCUBRA O SEU NÍVEL</h1>
+            <div id="ranks-list">
+                <img id="rank-logo" src="./src/images/ranks/Ferro.png" alt="Ferro">
+                <img id="rank-logo" src="./src/images/ranks/Bronze.png" alt="Bronze">
+                <img id="rank-logo" src="./src/images/ranks/Prata.png" alt="Prata">
+                <img id="rank-logo" src="./src/images/ranks/Ouro.png" alt="Ouro">
+                <img id="rank-logo" src="./src/images/ranks/Platina.png" alt="Platina">
+                <img id="rank-logo" src="./src/images/ranks/Diamante.png" alt="Diamante">
+                <img id="rank-logo" src="./src/images/ranks/Ascendente.png" alt="Ascendente">
+                <img id="rank-logo" src="./src/images/ranks/Imortal.png" alt="Imortal">
+                <img id="rank-logo" src="./src/images/ranks/Radiante.png" alt="Radiante">
+            </div>
+        </section>
+        <section id="output-section">
+            <h1 id="output-message"></h1>
+            <div id="banner">
+                <div id="banner-agent">
+                    <img id="agent" src="./src/images/fade.webp" alt="capa do agente favorito">
+                    <img id="rank" src="./src/images/ranks/Radiante.png" alt="rank-logo">
+                </div>
+            </div>
+            <h1 id="motivational"> </h1>
+        </section>
+    </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por: <a href="https://github.com/NicollasD">nico.dev</a></p>
+        <br>
+        <p id="rights">Todas as imagens e materiais relacionados ao jogo Valorant são propriedades de <a href="https://www.riotgames.com" target="_blank" rel="noopener noreferrer">Riot Games</a>. Este site é feito para fins educacionais/demonstrativos e não é afiliado ou endossado pela Riot Games.</p>
+    </footer>
+    <script src="./src/js/scripts.js"></script>
+</body>
+
+</html>
