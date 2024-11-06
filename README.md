@@ -22,3 +22,4 @@ Este projeto tem a temática do jogo Valorant, utilizando seus personagens e ide
 Este jogo foi desenvolvido como parte de um projeto educacional da Digital Innovation One. 
 Imagens e materiais com todos os direitos reservados à RIOT GAMES.
 
+obs: parte de responsividade ainda em desenvolvimento, o site está otimizado para resolução de 1920x1080 por enquanto.
